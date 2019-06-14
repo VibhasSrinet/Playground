@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]) {
+       Scanner in = new Scanner(System.in);
+       int arr_size = in.nextInt();
+       int arr[] = new int[arr_size];
+       for(int index = 0; index <= arr_size - 1; index++){
+           arr[index] = in.nextInt();
+       }
+      int v=in.nextInt();
+      for(int index1 = 0; index1 <= arr_size - 2; index1++)
+        {
+            for(int index2 = index1 + 1; index2 <= arr_size - 1; index2++)
+            {
+              if(arr[index1]+arr[index2]==v)
+                System.out.println(arr[index1]+", "+arr[index2]);
+            }
+      }
+    }
+}
